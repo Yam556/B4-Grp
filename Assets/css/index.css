@@ -45,6 +45,9 @@ h2{
     font-size: 4.4rem;
     line-height: 5.6rem;
 }
+h3{
+
+}
 p{
     line-height: 2.8rem;
     letter-spacing: 0.02rem;
@@ -156,3 +159,29 @@ a{
 }
 /* about section end */
 
+
+
+
+/* what i do section */
+.wh-outer h2{
+ box-sizing: border-box;
+ text-align: left;
+ font-weight: 400;
+ font-size: 30px;
+ width: 1160px;
+}
+
+.wh-outer{
+    background-color: var(--gray-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wh-inner{
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*WHAT I do section end */
