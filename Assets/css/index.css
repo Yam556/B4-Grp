@@ -38,6 +38,7 @@ h3, h4, h5, h6{
 }
 h1{
     font-size: 3.2rem;
+    font-weight: 600;
     line-height: 4.6rem;
 }
 h2{
@@ -53,13 +54,12 @@ a{
     color: var(--primary-terxt-color);
     transition: all 0.4s ease 0s;
     text-decoration: none;
-    
-    
+    text-transform: uppercase;
+    font-weight: 500; 
+    opacity: 1;
 }
-a:hover{
-    ;
-}
-.Section-outer{
+
+.section-outer{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -73,6 +73,61 @@ a:hover{
     box-sizing: border-box;
 }
 /* End Common Styles*/
+
+/* header section start */
+.header-section{
+    background-color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+
+}  
+.nav-section{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    gap: 570px;
+    align-items: center;
+    
+    float: inline-start;
+    
+}
+.menu-btn{
+    float: right;
+    display: flex;
+    margin-right: 200px;
+}
+.nav-section h1{
+    float: left;
+    padding-left: 370px;
+}
+.menu-btn a{
+    margin: 25px;
+    letter-spacing: 0.1rem;
+    display: block;
+    font-size: 12px;
+}
+.menu-btn a:hover{
+    color: #292929;
+    box-shadow: inset 0 -8px 0 var(--link-border-color); 
+}
+
+
+
+/* nav section end */
+/* */
+.back-image img{
+    padding: 5px 0px;
+    width: 188rem;
+    height: auto;
+}
+/* */
+
+
+
+/* About section start*/
 
 .about-section{
     display: flex;
@@ -97,5 +152,7 @@ a:hover{
     font-size: 1.2rem;
 }
 .about-section a:hover{
-    box-shadow: inset 0 -14px 0 var(--link-border-color) 
+    box-shadow: inset 0 -14px 0 var(--link-border-color); 
 }
+/* about section end */
+
