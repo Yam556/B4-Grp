@@ -45,9 +45,7 @@ h2{
     font-size: 4.4rem;
     line-height: 5.6rem;
 }
-h3{
 
-}
 p{
     line-height: 2.8rem;
     letter-spacing: 0.02rem;
@@ -93,7 +91,6 @@ a{
     display: flex;
     gap: 570px;
     align-items: center;
-    
     float: inline-start;
     
 }
@@ -177,11 +174,87 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 1903px;
+    height: 405px;
+
+}
+.wh-title{
+    line-height: 40px;
+    width: 1160px;
+    margin: 0px;
 }
 .wh-inner{
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
 }
 
+.wh-item{
+    margin-top: 25px;
+    width: 360.969px;
+    box-sizing: border-box;
+    height: 154px;
+    
+}
+.wh-item h3{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 0.1rem;
+}
+.wh-item p{
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0,3px;
+    line-height: 22px;
+    text-align: left;
+}
+.wh-item i{
+    font-size: 44px; 
+    line-height: 48px; 
+    color: rgb(231, 231, 5);
+}
 /*WHAT I do section end */
+
+
+/* Resent works start */
+.works-outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1903px;
+    height: 745px;
+}
+.works-outer h2{
+    box-sizing: border-box;
+    text-align: left;
+    font-weight: 400;
+    font-size: 30px;
+    width: 1160px;
+}
+.works-inner{
+    width: 1160px;
+    float: left;
+    display: flex;
+    justify-items: flex-start;
+    margin: 0px;
+    gap: 40px;
+    
+}
+.works-inner > a{
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.works-items img{
+    width: 359px;
+    height: 27rem;
+    padding: 20px;
+
+}
+
+
+/* Resent works end*/
