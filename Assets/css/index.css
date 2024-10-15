@@ -168,6 +168,12 @@ h4:hover .overlay-text::after {
     gap: 40px;
 
 }
+
+@media screen and (max-width: 500px) {
+    .about-section{
+        flex-direction: column;
+    }
+}
 .about-section img{
     max-width: 360px;
     height: auto;
@@ -236,7 +242,7 @@ h4:hover .overlay-text::after {
     font-weight: 500;
     text-transform: uppercase;
     position: relative;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1em;
 }
 .wh-item p{
     font-size: 13px;
@@ -372,6 +378,7 @@ h4:hover .overlay-text::after {
     align-items: center;
     flex-direction: column;
 }
+
 .form-outer h2{
     box-sizing: border-box;
     text-align: left;
