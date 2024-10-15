@@ -335,7 +335,7 @@ a{
 
 .form-outer{
     width: 100%;
-    height: 594.96px;
+    height: 386px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,9 +347,11 @@ a{
     font-weight: 400;
     font-size: 30px;
     width: 1160px;
+    line-height: 40px;
 }
 .form-inner{
     width: 1160px;
+    height: 321px;
     float: left;
     display: flex;
     justify-items: flex-start;
@@ -371,4 +373,98 @@ a{
     border: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
+    padding: 20px 0;
 }
+.message div{
+    max-width: 1159.9px;
+    width: 100%;
+    height: 79px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 0 20px;
+}
+.message div textarea{
+    border: 0px;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 79px;
+    padding: 20px 0;
+}
+.send-btn{
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+.send-btn a{
+    color: rgb(41, 41, 41);
+    padding: 2px 0 0 0 ;
+    font-weight: 500;
+    vertical-align: top;
+    opacity: 1;
+    text-align: left;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    display: inline-block;
+    box-shadow: inset 0 -6px 0 var(--link-border-color);
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* End form */
+
+
+/*footer start */
+.footer-outer{
+    display: flex;
+    width: 100%;
+    max-width: 1903px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--gray-bg);
+    padding-bottom: 60px;
+}
+
+
+
+.footer-icon{
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    margin-bottom: 20px;
+}
+.footer-icon a{
+    width: 42x;
+    height: 42px;
+    color: rgb(41, 41, 41);
+    font-weight: 300;
+    line-height: 42px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+.footer-icon a i{
+    font-size: 18px;
+    padding: 13px;
+    height: 18px;
+}
+.footer-icon a:hover{
+    border: 1px solid #000;
+}
+.copyright p{
+    font-size: 13px;
+    height: 20px;
+    max-width: 1903px;
+    width: 100%;
+    margin: 0;
+}
+.copyright{
+    height: 46px;
+}
+/* footer end */
