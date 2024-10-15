@@ -119,12 +119,43 @@ a{
 
 
 /* nav section end */
+
+
 /* */
-.back-image img{
+.backg-image{
+    position: relative;
+    display: inline-block;
+}
+.backg-image img{
     padding: 5px 0px;
     width: 100%;
     height: auto;
 }
+.centered-text {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 24px;
+    cursor: pointer;
+}
+.centered-text h4{
+    font-size: 80px;
+    color: #fff;
+    margin: 0;
+}
+.centered-text a{
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+}
+h4:hover .overlay-text::after {
+    content: "LinkedIn";
+}
+
 /* */
 
 
