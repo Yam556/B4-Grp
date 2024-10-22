@@ -80,8 +80,8 @@ a{
 .header-section{
     background-color: #fff;
     width: 100%;
-    position: sticky;
     top: 0;
+    left: 0;
     z-index: 1000;
     box-sizing: border-box;
     display: flex;
@@ -97,6 +97,7 @@ a{
     float: inline-start;
     
 }
+
 .menu-btn{
     float: right;
     display: flex;
@@ -288,11 +289,17 @@ h4:hover .overlay-text::after {
     text-transform: capitalize;
     font-weight: 300;
 }
+.works-items{
+    gap: 2.5rem;
+}
 .works-items img{
-    width: 359px;
+    width: 100%;
     height: 27rem;
-    padding: 20px;
-
+    transition: all 200ms ease 0s;
+    cursor: pointer;
+}
+.works-items img:hover{
+    transform: translateY(-10px);
 }
 
 /* Resent works end*/
@@ -319,6 +326,7 @@ h4:hover .overlay-text::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3.5rem;
     
 }
 .blog-item{
@@ -365,6 +373,24 @@ h4:hover .overlay-text::after {
     box-shadow: inset 0 -6px 0 var(--link-border-color);
     text-transform: uppercase;
     font-size: 1.2rem;
+}
+.blog-view a:hover{
+    box-shadow: inset 0 -14px 0 var(--link-border-color);
+}
+@media screen and (max-width: 1000px){
+    .blog-outer .blog-inner{
+        flex-wrap: wrap;
+    }
+    .blog-item{
+        width: calc((100% - 3.5rem) / 2);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .blog-inner .blog-item{
+        width: 100%;
+    }
 }
 
 
@@ -453,6 +479,9 @@ h4:hover .overlay-text::after {
     border: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.send-btn a:hover{
+    box-shadow: inset 0 -14px 0 var(--link-border-color);
+}
 /* End form */
 
 
@@ -486,6 +515,9 @@ h4:hover .overlay-text::after {
     border: 1px solid #ccc;
     border-radius: 50%;
     margin: 0 6px;
+}
+.footer-icon a:focus{
+    border: none;
 }
 .footer-icon a i{
     font-size: 18px;
