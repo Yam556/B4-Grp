@@ -12,30 +12,39 @@
 </head>
 <body>
     
-    <header class="header-section">
+    <header class="header-section bg-nav">
         <h1>
             Hendrix  
         </h1>
         <div class="nav-section">
-            
             <nav class="menu-btn">
-                <a href="https://bslthemes.com/html/hendrix/theme_colors/default/index-particles.html#about-section">About</a>
-                <a href="https://bslthemes.com/html/hendrix/theme_colors/default/index-particles.html#services-section">what i do</a>
-                <a href="https://bslthemes.com/html/hendrix/theme_colors/default/index-particles.html#works-section">works</a>
-                <a href="https://bslthemes.com/html/hendrix/theme_colors/default/index-particles.html#blog-section">blog</a>
-                <a href="https://bslthemes.com/html/hendrix/theme_colors/default/index-particles.html#contact-section">contact</a>
+                <a href="#about">About</a>
+                <a href="#wh-i-do">what i do</a>
+                <a href="#works">works</a>
+                <a href="#blogs">blog</a>
+                <a href="#contact-us">contact</a>
             </nav>
         </div>
     </header>
 
 
-    <div class="back-image">
-        <img src="./Assets/picture/pexels-divinetechygirl-1181677.jpg" alt="">
+    <div class="backg-image">
+        <img src="./Assets/picture/bg2.jpg" alt="">
+        <div class="centered-text overlay-text">
+            <h4>Facebook</h4>
+            <div class="icon-ff">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
     </div>
 
 
     <section>
-        <div class="section-outer">
+        <div id="about" class="section-outer">
             <div class="section-inner about-section">
                 <img src="./assets/picture/profile.jpg" alt="Steven Hendrix">
                 <div>
@@ -53,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-outer wh-outer">
+        <div id="wh-i-do" class="section-outer wh-outer">
                 <h2 class="wh-title">
                     What I Do
                 </h2>
@@ -99,7 +108,7 @@
 
         </div>
 
-        <div class="section-outer works-outer">
+        <div id="works" class="section-outer works-outer">
             <h2>Recent Works</h2>
             <div class="works-inner">
                 <a href="#">All</a>
@@ -121,7 +130,7 @@
     </section>
 
     <section>
-        <div class="section-outer blog-outer">
+        <div id="blogs" class="section-outer blog-outer">
             <h2>Latest Blogs</h2>
             <div class="blog-inner">
                 <div class="blog-item">
@@ -151,7 +160,7 @@
 
         </div>
     </section>
-    <form action="submit" class="section-outer form-outer">
+    <form action="submit" id="contact-us" class="section-outer form-outer">
         <h2>Contact Me</h2>
         <div class="form-inner">
             <div class="form-item">
@@ -164,7 +173,7 @@
             </div>
             <div class="form-item">
                 <div >
-                    <input type="text" placeholder="Email*" required>
+                    <input type="email" placeholder="Email*" required>
                 </div>
                 <div>
                     <input type="text" placeholder="Subject*" required>
